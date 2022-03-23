@@ -7,7 +7,7 @@
 	"license": "",
 	"type": "module",
 	"scripts": {
-		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
+		"dev": "gulp development && webpack serve --progress -c config/webpack.dev.js",
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"reset": "gulp reset",

@@ -26,9 +26,9 @@ section{
   }
 }
 
-@media (min-width: 1399.98px){
+@media (min-width: 1439.98px){
   section {
-    padding: 0 calc(50% - 789px);
+    padding: 0 calc(50% - 750px);
   }
 }
 
@@ -44,22 +44,29 @@ section{
 	max-width: 100% !important;
 	width: 100%
 }
-.header {
-	padding: 35px 0
+.back {
+	padding: 35px 80px;
+	@media (max-width: $mobile){
+		padding: 5px 20px;
+	}
 }
-.container {
-	padding: 0 171px
+
+.page .main{
+	@media (min-width:$mobile){
+		margin-top: -150px;
+	}
 }
 .header-arrow {
 	display: flex;
-	width: 66px;
-	height: 66px;
+	width: 54px;
+	height: 54px;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0 1px 5px 0 rgba(1, 1, 1, .26);
 	border-radius: 50%;
 	align-items: center;
 	justify-content: center;
-	margin-top: 33px;
+	margin-top : 15px;
+	margin-bottom : 15px;
 	transition: .3s;
 }
 .header-arrow:hover {
@@ -205,7 +212,21 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.08);
 	top: 0;
 	left: 0;
 }
-
+header.show{
+		&:after {
+	@media (max-width: $mobile){
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			background: #292929;
+			opacity: 0.6;
+	}
+	}	
+}
 header.show .header-menu{
 	background: #3399FF;
 	width: 100%;
@@ -214,6 +235,16 @@ header.show .header-menu{
 	flex-direction: column;
 	align-items: center;
 	z-index: 1;
+	@media (max-width: $mobile){
+		margin-top: 30px;
+	}
+	a{
+		@media (max-width: $mobile){
+			font-size: em(22);
+			color:#fff;
+			font-weight: 600;
+		}
+	}
 }
 }
 
@@ -432,7 +463,7 @@ margin-top: 0;
 	font-size: 3.75rem;
 	color: rgb(41, 41, 41);
 	line-height: 1.2;
-	font-weight: 700;
+	font-weight: 800;
 	text-align: left;
 	margin: 0
 }
@@ -442,7 +473,7 @@ margin-top: 0;
 	line-height: 1.2;
 	text-align: left;
 	margin: 0;
-	margin-top: 50px
+	margin-top: 25px
 }
 .main__Secret-list {
 	display: flex;
@@ -458,7 +489,8 @@ margin-top: 0;
 }
 .main__Secret-list li b {
 	display: block;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	font-weight: 600;
 }
 .main__CrossFitIntro {
 	display: grid;
@@ -466,9 +498,7 @@ margin-top: 0;
 	justify-content: space-between;
 	margin-bottom: 110px
 }
-.main__Intro-text {
-	max-width: 640px
-}
+
 .main__Intro-text:nth-child(2) {
 	margin-top: 9.375rem
 }
@@ -486,7 +516,10 @@ margin-top: 0;
 	color: rgb(41, 41, 41);
 	line-height: 1.2;
 	text-align: left;
-	margin-bottom: 30px
+	margin-bottom: 30px;
+	@media (max-width: $mobile){
+		text-align:center
+	}
 }
 .main__CrossFitIntro-book {
 	display: block;
@@ -848,14 +881,23 @@ margin-top: 0;
 	margin-top: 50px
 }
 .main__GoogleIntro {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 7.813rem
+	display: grid;
+	grid-template-columns: 6fr 1.2fr;
+	margin-bottom: 7.813rem;
+	grid-gap: 60px;
+	margin-bottom: 7.813rem;
+	@media (max-width: $mobile){
+		grid-template-columns: 1fr;
+	}
 }
 .main__GoogleIntro-wear img {
 	position: relative;
-	margin-top: -20rem;
-	width: 100%
+	width: 100%;
+	@media (max-width: $mobile){
+		width:30%;
+		margin: auto;
+		display: block;
+	}
 }
 .main__GoogleTime {
 	background-color: rgb(246, 246, 246);
@@ -865,7 +907,10 @@ margin-top: 0;
 .main__GoogleTime__wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 25px
+	grid-gap: 25px;
+	img{
+		width: 100%;
+	}
 }
 .main__GoogleTime_list {
 	display: flex;
@@ -933,7 +978,10 @@ margin-top: 0;
 	font-weight: 700;
 	line-height: 1.2;
 	text-align: left;
-	margin-bottom: 25px
+	margin-bottom: 25px;
+	@media (max-width: $mobile){
+		text-align:center
+	}
 }
 .main__GoogleWatch-text {
 	font-size: 1.5rem;
@@ -942,31 +990,15 @@ margin-top: 0;
 	margin: 0
 }
 .main__GoogleWatchExpample {
-	margin-bottom: 150px
+	margin-bottom: 50px
 }
 .main__GoogleWatchExpample_block {
-	height: 696px;
-	position: relative
+	margin-bottom: 5rem;
+	img{
+	width: 100%;
 }
-.main__GoogleWatchExpample_block.Nine {
-	background: url(img/NineBG.png) center no-repeat;
-	margin-bottom: 90px;
-	background-size: cover
 }
-.main__GoogleWatchExpample_block.Nine img {
-	position: absolute;
-	right: 0;
-	transform: translate(-100%, 50%);
-}
-.main__GoogleWatchExpample_block.Seven {
-	background: url(img/SevenBG.png) center no-repeat;
-	background-size: cover
-}
-.main__GoogleWatchExpample_block.Seven img {
-	position: absolute;
-	left: 0;
-	transform: translate(100%, 25%);
-}
+
 .main__GoogleReviews {
 	margin-bottom: 170px
 }
@@ -1006,7 +1038,7 @@ margin-top: 0;
 }
 .main__GoogleWinner-video::after {
 	content: '';
-	background: url(img/VideoPlay.png) center no-repeat;
+	background: url(@img/VideoPlay.png) center no-repeat;
 	cursor: pointer;
 	background-size: cover;
 	width: 100px;
@@ -1320,9 +1352,7 @@ margin-top: 0;
 	.main__home_list {
 		margin-bottom: 0
 	}
-	.main__GoogleIntro-wear img {
-		margin-top: -10rem
-	}
+
 	.main__GoogleTime__wrapper {
 		grid-template-columns: 1fr
 	}
@@ -1453,9 +1483,6 @@ margin-top: 0;
 		grid-gap: 1rem
 	}
 
-	.main__GoogleIntro-wear img {
-		margin-top: -5rem
-	}
 	.main__GoogleTime_block span svg {
 		width: 150px;
 		height: 150px
@@ -1491,14 +1518,21 @@ margin-top: 0;
 	}
 	.main__GoogleWatch-text,
 	.main__GoogleWinner-text {
-		font-size: 1rem
+		font-size: 1rem;
+		@media (max-width: $mobile){
+			text-align:center
+		}
 	}
 	.main__GoogleWinner-text {
 		margin-bottom: 2rem
 	}
 	.main__GoogleWatch-img {
 		max-width: 130px;
-		margin-bottom: 1rem
+		margin-bottom: 1rem;
+		@media (max-width: $mobile) {
+			order: 1;
+			margin-top: 30px;
+		}
 	}
 	.main__Intro-text:nth-child(2) {
 		margin-top: 3rem
@@ -1506,16 +1540,8 @@ margin-top: 0;
 	.main__GoogleTime {
 		padding-bottom: 3rem
 	}
-	.main__GoogleWatchExpample_block.Nine img,
-	.main__GoogleWatchExpample_block.Seven img {
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-	}
-	.main__GoogleWatchExpample_block.Nine {
-		margin-bottom: 2rem
-	}
+
+
 	.main__GoogleWatchExpample,
 	.main__GoogleReviews {
 		margin-bottom: 3rem
@@ -1614,4 +1640,11 @@ border-radius: 3px;;
 }
 img.swiper-slide{
 	width: 100%;
+}
+
+.showmobile{
+	display: none;
+	@media (max-width: $mobile){
+		display: block;
+	}
 }
