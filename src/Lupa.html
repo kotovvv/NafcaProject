@@ -1,133 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="all" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <title>Nafca Brand Ux-Ui</title>
-</head>
-
-<body>
-    <header class="header container fadeInDown wow">
-        <a href="#" onclick="window.history.back()" class="header-arrow" data-svg="img/arrow_back.svg"></a>
-    </header>
+  @@include('html/_head.htm',{ "title":"Lupa" })
+  <body>
+    <div class="wrapper page">
+      @@include('html/_header.htm',{})
+      @@include('html/_headerpage.htm',{})
     <main class="main">
+      <section class="main__Lupa container fadeInRight wow">
+        <img src="img/LupaBg.png" />
+      </section>
+      <section class="main__Secret container fadeInLeft wow">
+        <h3>Digital photos into the real world</h3>
+        <p>
+          How our work with Lupa generated a friendly app to create the most
+          amazing detailed photobooks.
+        </p>
+        <ul class="main__Secret-list">
+          <li><b>Deliverables:</b>UX-UI</li>
+          <li><b>Platforms:</b>iOS/Android</li>
+        </ul>
+      </section>
+      <section class="main__Intro main__IntroLupa">
+        <div class="container">
+          <div class="main__Intro-text fullWidth fadeInLeft wow">
+            <h3>Take photos, and do somthing good with it.</h3>
+            <p>
+              A bunch of photo lovers established Lupa 13 years ago, with a
+              dream to save digital photos from the darkness of storage on
+              phones and computers, and to publish them in print in a real and
+              memorable book.
+            </p>
+          </div>
+        </div>
 
-        <section class="main__Lupa container fadeInRight wow">
-            <img src="img/LupaBg.png">
-        </section>
-        <section class="main__Secret container fadeInLeft wow">
-            <h3>Digital photos into the real world</h3>
-            <p>How our work with Lupa generated a friendly app to create the most amazing detailed photobooks. </p>
-            <ul class="main__Secret-list">
-                <li><b>Deliverables:</b>UX-UI</li>
-                <li><b>Platforms:</b>iOS/Android</li>
-            </ul>
-        </section>
-        <section class="main__Intro main__IntroLupa ">
-            <div class="container">
-                <div class="main__Intro-text fullWidth fadeInLeft wow">
+        <img class="main__IntroLupa-bg fadeInUp wow" src="img/LupaPhoto.png" />
+      </section>
+      <section class="main__Intro main__LupaPower container">
+        <div class="main__LupaPower_content fadeInLeft wow">
+          <div class="main__Intro-text">
+            <h3>
+              The digital power <br />
+              to become a mini publisher
+            </h3>
+            <p>
+              Lupa is a digital product with a full production line behind the
+              scenes: Print house, Quality assurance, Packaging and Deliveries.
+              To create the new app, we needed to understand the entire process
+              of production, and it's capabilities to ensure that new approaches
+              and ideas can be fulfilled.
+            </p>
+          </div>
+        </div>
+        <div class="main__LupaPower_images fadeInRight wow">
+          <img src="img/LuapeImages.png" />
+        </div>
+      </section>
+      <section class="main__Intro main__LupaApp container">
+        <div class="main__LupaPower_images fadeInLeft wow">
+          <img src="img/LupaTel.png" />
+        </div>
+        <div class="main__LupaPower_content fadeInRight wow">
+          <div class="main__Intro-text">
+            <h3>Planning the new App</h3>
+            <p>
+              At first, we used and experienced the app to get to know it
+              better. We interviewed several "hardcore" users and costumers to
+              understand the "Ups" and "Downs" of its user experience. We
+              created a full wishlist of new features and capabilities, together
+              with Lupa's management level.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main__Intro main__LupaExp container">
+        <div class="main__Intro-text main__LupaExp-text fullWidth fadeInUp wow">
+          <h3>Exploring and defining a new approch</h3>
+          <p>
+            Our goal was to create a better user experience so that users will
+            initiate or even accomplish creations faster and in a more focused
+            way. For that to happen, we understood that the app should have
+            several paths of closed loops according to user’s desire and wish,
+            and less “open.” It’s about doing and creating, so the first thing
+            should be focused on - “what do you want to create”?
+          </p>
+        </div>
+        <div class="main__LupaExp-img">
+          <img src="img/LupaExp1.png" class="fadeInLeft wow" />
+          <img src="img/LupaExp2.png" class="fadeInRight wow" />
+        </div>
+      </section>
+      <section class="main__IscarFrame">
+        <span
+          class="main__IscarFrame-img fadeInUp wow"
+          data-svg="img/IscarFrame.svg"
+        ></span>
 
-                    <h3>Take photos, and do somthing good with it.</h3>
-                    <p>A bunch of photo lovers established Lupa 13 years ago, with a dream to save digital photos from the darkness of storage on phones and computers, and to publish them in print in a real and memorable book.
-                    </p>
-                </div>
-            </div>
+        <h5 class="main__IscarFrame-title fadeInUp wow">
+          User Exprience WireFrame Planing
+        </h5>
+        <p class="main__IscarFrame-text container fadeInUp wow">
+          The user experience planing accomplished all demands, Management
+          level, and employees were all delighted. <br />
+          Most importantly, we understood that after UI design and development,
+          efficiency results would set new records.
+        </p>
+      </section>
+      <section class="main__Desctop fadeInUp wow">
+        <div class="main__Desctop-img">
+          <img src="img/MacbookPro.png" />
+        </div>
 
-            <img class="main__IntroLupa-bg fadeInUp wow" src="img/LupaPhoto.png">
-
-        </section>
-        <section class="main__Intro main__LupaPower container">
-            <div class="main__LupaPower_content fadeInLeft wow">
-                <div class="main__Intro-text">
-                    <h3>The digital power <br> to become a mini publisher</h3>
-                    <p>Lupa is a digital product with a full production line behind the scenes: Print house, Quality assurance, Packaging and Deliveries. To create the new app, we needed to understand the entire process of production, and it's capabilities
-                        to ensure that new approaches and ideas can be fulfilled.
-                    </p>
-                </div>
-
-            </div>
-            <div class="main__LupaPower_images fadeInRight wow">
-                <img src="img/LuapeImages.png">
-            </div>
-        </section>
-        <section class="main__Intro main__LupaApp container">
-            <div class="main__LupaPower_images fadeInLeft wow">
-                <img src="img/LupaTel.png">
-            </div>
-            <div class="main__LupaPower_content fadeInRight wow">
-                <div class="main__Intro-text">
-                    <h3>Planning the new App</h3>
-                    <p>At first, we used and experienced the app to get to know it better. We interviewed several "hardcore" users and costumers to understand the "Ups" and "Downs" of its user experience. We created a full wishlist of new features and capabilities,
-                        together with Lupa's management level.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-        <section class="main__Intro main__LupaExp container">
-
-            <div class="main__Intro-text main__LupaExp-text fullWidth fadeInUp wow">
-                <h3>Exploring and defining a new approch</h3>
-                <p>Our goal was to create a better user experience so that users will initiate or even accomplish creations faster and in a more focused way. For that to happen, we understood that the app should have several paths of closed loops according
-                    to user’s desire and wish, and less “open.” It’s about doing and creating, so the first thing should be focused on - “what do you want to create”? </p>
-            </div>
-            <div class="main__LupaExp-img">
-                <img src="img/LupaExp1.png" class="fadeInLeft wow">
-                <img src="img/LupaExp2.png" class="fadeInRight wow">
-            </div>
-
-        </section>
-        <section class="main__IscarFrame">
-            <span class="main__IscarFrame-img fadeInUp wow" data-svg="img/IscarFrame.svg"></span>
-
-            <h5 class="main__IscarFrame-title fadeInUp wow">User Exprience WireFrame Planing</h5>
-            <p class="main__IscarFrame-text container fadeInUp wow">The user experience planing accomplished all demands, Management level, and employees were all delighted. <br> Most importantly, we understood that after UI design and development, efficiency results would set new records.</p>
-        </section>
-        <section class="main__Desctop fadeInUp wow">
-            <div class="main__Desctop-img">
-                <img src="img/MacbookPro.png">
-            </div>
-
-            <div class="main__Desctop-title">Color indicators on “Mobile” look a like cards</div>
-        </section>
-        <section class="main__Interface container">
-            <div class="main__Interface_left fadeInLeft wow">
-                <h3 class="main__Interface-title title">User Interface </h3>
-                <p class="main__Interface-text">The UI design uplifted and refined the user experience plan. It was designed to be a clean environment to allow all critical information to be clear, visible, and in order.
-                </p>
-                <img src="img/isCarInterfece.png">
-            </div>
-            <div class="main__Interface_right fadeInRight wow">
-                <img src="img/isCarInterfece2.png">
-            </div>
-        </section>
+        <div class="main__Desctop-title">
+          Color indicators on “Mobile” look a like cards
+        </div>
+      </section>
+      <section class="main__Interface container">
+        <div class="main__Interface_left fadeInLeft wow">
+          <h3 class="main__Interface-title title">User Interface</h3>
+          <p class="main__Interface-text">
+            The UI design uplifted and refined the user experience plan. It was
+            designed to be a clean environment to allow all critical information
+            to be clear, visible, and in order.
+          </p>
+          <img src="img/isCarInterfece.png" />
+        </div>
+        <div class="main__Interface_right fadeInRight wow">
+          <img src="img/isCarInterfece2.png" />
+        </div>
+      </section>
     </main>
     <footer class="footer fadeInUp wow">
-        <div class="footer__Talk container">
-            <div class="footer__Talk-title">Need us to create the next stage?</div>
-            <a href="#" class="footer__Talk-link">Let’s Talk</a>
-        </div>
-        <div class="footer__vlog container">
-            <a href="#" class="footer__vlog-link">Check out our Vlog <span data-svg="img/arrow_footer.svg"></span></a>
-        </div>
-        <div class="footer__home container"><a href="#" class="footer__home-link">Home</a> </div>
+      <div class="footer__Talk container">
+        <div class="footer__Talk-title">Need us to create the next stage?</div>
+        <a href="#" class="footer__Talk-link">Let’s Talk</a>
+      </div>
+      <div class="footer__vlog container">
+        <a href="#" class="footer__vlog-link"
+          >Check out our Vlog <span data-svg="img/arrow_footer.svg"></span
+        ></a>
+      </div>
+      <div class="footer__home container">
+        <a href="#" class="footer__home-link">Home</a>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="js/slick.js"></script>
-<script src="js/main.js"></script>
-
+  @@include('html/_js.htm',{})
 </html>

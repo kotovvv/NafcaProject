@@ -1,28 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="all" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <title>Nafca Brand Ux-Ui</title>
-</head>
-
-<body>
-    <header class="header container fadeInDown wow">
-        <a href="#" onclick="window.history.back()" class="header-arrow" data-svg="img/arrow_back.svg"></a>
-    </header>
+  @@include('html/_head.htm',{ "title":"Diners" })
+  <body>
+    <div class="wrapper page">
+      @@include('html/_header.htm',{})
+      @@include('html/_headerpage.htm',{})
     <main class="main">
 
         <section class="main__Diners container fadeInRight wow">
@@ -98,7 +80,6 @@
     </footer>
 </body>
 
-<script src="js/slick.js"></script>
-<script src="js/main.js"></script>
+@@include('html/_js.htm',{})
 
 </html>

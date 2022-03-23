@@ -71,13 +71,13 @@ $(function () {
 $(document).ready(function () {
   // onload images
   let iswebp = $("html").hasClass("webp");
-  let cont = document.createElement("div")
-  cont.id='swiper'
-  cont.className='swiper-container'
-  let wrap = document.createElement("div")
-  wrap.className='swiper-wrapper'
-  let pagin = document.createElement("div")
-  pagin.className='swiper-pagination'
+  let cont = document.createElement("div");
+  cont.id = "swiper";
+  cont.className = "swiper-container";
+  let wrap = document.createElement("div");
+  wrap.className = "swiper-wrapper";
+  let pagin = document.createElement("div");
+  pagin.className = "swiper-pagination";
   $("[data-src]").each(function (ix, el) {
     let filepath = $(el).data("src");
     if (iswebp) {
@@ -86,27 +86,30 @@ $(document).ready(function () {
       $(el).data("src", filepath);
     }
     let tag_a = document.createElement("a");
-    tag_a.href = $(el).attr('href')
+    tag_a.href = $(el).attr("href");
     let img = document.createElement("img");
-    img.className='swiper-slide'
+    img.className = "swiper-slide";
     img.src = filepath;
-    tag_a.appendChild(img)
-    wrap.appendChild(tag_a)
+    tag_a.appendChild(img);
+    wrap.appendChild(tag_a);
   });
 
-cont.appendChild(wrap);
-cont.appendChild(pagin);
-if (window.innerWidth < 768){
-document.getElementsByClassName('main__home_view')[0].replaceWith(cont) ;
-$('#swiper .swiper-wrapper').slick({
-  // infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  dots: true,
-})
-}
+  cont.appendChild(wrap);
+  cont.appendChild(pagin);
+  if (
+    window.innerWidth < 768 &&
+    document.getElementsByClassName("main__home_view").length
+  ) {
+    document.getElementsByClassName("main__home_view")[0].replaceWith(cont);
+    $("#swiper .swiper-wrapper").slick({
+      // infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+    });
+  }
   $(".hamburger-lines").click(function () {
     $(".header__home").toggleClass("show");
   });
