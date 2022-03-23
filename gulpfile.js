@@ -7,14 +7,14 @@ import { path } from "./config/gulp-settings.js";
 
 // Передаем значения в глобальную переменную
 global.app = {
-	isBuild: process.argv.includes('--build'),
-	isDev: !process.argv.includes('--build'),
-	isWebP: !process.argv.includes('--nowebp'),
-	isFontsReW: process.argv.includes('--rewrite'),
-	gulp: gulp,
-	path: path,
-	plugins: plugins
-}
+  isBuild: process.argv.includes("--build"),
+  isDev: !process.argv.includes("--build"),
+  isWebP: !process.argv.includes("--nowebp"),
+  isFontsReW: process.argv.includes("--rewrite"),
+  gulp: gulp,
+  path: path,
+  plugins: plugins,
+};
 
 // Импорт задач
 import { reset } from "./config/gulp-tasks/reset.js";
@@ -27,26 +27,35 @@ import { ftp } from "./config/gulp-tasks/ftp.js";
 import { zip } from "./config/gulp-tasks/zip.js";
 import { sprite } from "./config/gulp-tasks/sprite.js";
 import { gitignore } from "./config/gulp-tasks/gitignore.js";
+import { pushgit } from "./config/gulp-tasks/pushgit.js";
+
 import { otfToTtf, ttfToWoff, fonstStyle } from "./config/gulp-tasks/fonts.js";
 
 // Последовательная обработака шрифтов
 const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
 // Основные задачи будем выполнять параллельно после обработки шрифтов
-const devTasks = gulp.series(  js,gulp.parallel( html, css, images));
+const devTasks = gulp.series(js, gulp.parallel(html, css, images));
 // Основные задачи будем выполнять параллельно после обработки шрифтов
-const buildTasks = gulp.series( jsDev, js, gulp.parallel(html, css, images, gitignore));
+const buildTasks = gulp.series(
+  jsDev,
+  js,
+  gulp.parallel(html, css, images, gitignore)
+);
+// Push on Github
+const deployGit = gulp.series(pushgit);
 
 // Экспорт задач
-export { html }
-export { css }
-export { js }
-export { jsDev }
-export { images }
-export { fonts }
-export { sprite }
-export { ftp }
-export { zip }
-export { reset }
+export { html };
+export { css };
+export { js };
+export { jsDev };
+export { images };
+export { fonts };
+export { sprite };
+export { ftp };
+export { zip };
+export { reset };
+export { pushgit };
 
 // Построение сценариев выполнения задач
 const development = gulp.series(devTasks);
@@ -55,16 +64,11 @@ const deployFTP = gulp.series(buildTasks, ftp);
 const deployZIP = gulp.series(buildTasks, zip);
 
 // Экспорт сценариев
-export { development }
-export { build }
-export { deployFTP }
-export { deployZIP }
+export { development };
+export { build };
+export { deployFTP };
+export { deployZIP };
+export { deployGit };
 
 // Выполнение сценария по умолчанию
-gulp.task('default', development);
-
-
-
-
-
-
+gulp.task("default", development);
