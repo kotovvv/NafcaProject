@@ -2,8 +2,13 @@
 .goout {
   color: #848484;
   font-style: 18px;
-  @media (max-width: $mobile){
+  @media (max-width: $mobile) {
     display: none;
+  }
+  &.nth {
+    @media (max-width: $mobile) {
+      display: block;
+    }
   }
   svg {
     width: 12px;
@@ -11,10 +16,10 @@
     fill: #676767;
     vertical-align: middle;
     margin-left: 8px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
-  &:hover{
-    svg{
+  &:hover {
+    svg {
       width: 18px;
       height: 18px;
       margin-left: 18px;

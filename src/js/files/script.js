@@ -50,23 +50,27 @@ import { flsModules } from "./modules.js";
     request.send();
   } catch (e) {}
 })(window, document);
-$(function () {
-  var div = $(".main__home_view");
-  var img = $("img", div)[0];
-  $(".main__home_companies-list a").each(function (i, el) {
-    var src = $(el).data("src");
-    if ($(el).data("src")) {
-      $(el)
-        .mouseleave(function () {
-          div.removeClass("show");
-        })
-        .mouseenter(function () {
-          img.src = src;
-          div.addClass("show");
+
+window.onload = function () {
+  let div = document.getElementsByClassName("main__home_view")[0];
+  let img = document.createElement("img");
+  img.id = "jsshowimg";
+  div.appendChild(img);
+  document
+    .querySelectorAll(".main__home_companies-list a")
+    .forEach(function (el) {
+      let src = el.dataset.src;
+      if (src) {
+        el.addEventListener("mouseleave", function () {
+          div.classList.remove("show");
         });
-    }
-  });
-});
+        el.addEventListener("mouseenter", function () {
+          img.src = src;
+          div.classList.add("show");
+        });
+      }
+    });
+};
 
 $(document).ready(function () {
   // onload images
