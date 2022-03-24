@@ -115,6 +115,6 @@ $(document).ready(function () {
     });
   }
   $(".hamburger-lines").click(function () {
-    $(".header__home").toggleClass("show");
+    $("body").toggleClass("show");
   });
 });
