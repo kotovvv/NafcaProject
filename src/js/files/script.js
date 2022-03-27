@@ -53,6 +53,7 @@ import { flsModules } from "./modules.js";
 
 window.onload = function () {
   let div = document.getElementsByClassName("main__home_view")[0];
+  if (!div) return;
   let img = document.createElement("img");
   img.id = "jsshowimg";
   div.appendChild(img);
@@ -84,16 +85,20 @@ $(document).ready(function () {
   pagin.className = "swiper-pagination";
   $("[data-src]").each(function (ix, el) {
     let filepath = $(el).data("src");
+    let img = document.createElement("img");
+    img.className = "swiper-slide";
     if (iswebp) {
       // load webp
       filepath = filepath.replace(/(png|jpg)/, "webp");
-      $(el).data("src", filepath);
     }
+    img.src = filepath;
+    img.onload = function () {
+      el.dataset.src = filepath;
+    };
+
     let tag_a = document.createElement("a");
     tag_a.href = $(el).attr("href");
-    let img = document.createElement("img");
-    img.className = "swiper-slide";
-    img.src = filepath;
+
     tag_a.appendChild(img);
     wrap.appendChild(tag_a);
   });

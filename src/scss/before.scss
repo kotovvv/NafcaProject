@@ -26,11 +26,11 @@ section {
   }
 }
 
-@media (min-width: 1439.98px) {
-  section {
-    padding: 0 calc(50% - 750px);
-  }
-}
+// @media (min-width: 1439.98px) {
+//   section {
+//     padding: 0 calc(50% - 750px);
+//   }
+// }
 
 .title {
   font-size: 2.25rem;
@@ -54,6 +54,9 @@ section {
 .page .main {
   @media (min-width: $mobile) {
     margin-top: -150px;
+  }
+  @media (max-width: 1500px) {
+    margin-top: 0;
   }
 }
 .header-arrow {
@@ -445,6 +448,7 @@ header .header-menu a {
   visibility: hidden;
   opacity: 0;
   transition: 0.5s all;
+  top: -30px;
 }
 .main__home_view.show img {
   opacity: 1;
@@ -1222,7 +1226,7 @@ header .header-menu a {
   color: rgb(129, 129, 129);
   line-height: 1.5;
   text-align: center;
-  margin-top: -5.75rem;
+  margin-top: 2rem;
 }
 .main__IscarFrame-text {
   font-size: 1.5rem;
