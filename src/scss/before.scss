@@ -28,9 +28,11 @@ section {
 }
 @media (min-width: 2000px) {
   .wrapper{
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
-    zoom: 1.3;
+    // zoom: 1.3;
+    transform: scale(1.3);
+transform-origin: center top;
   }
 }
 
