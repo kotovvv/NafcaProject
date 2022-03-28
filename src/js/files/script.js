@@ -91,9 +91,13 @@ $(document).ready(function () {
       // load webp
       filepath = filepath.replace(/(png|jpg)/, "webp");
     }
+
     img.src = filepath;
     img.onload = function () {
       el.dataset.src = filepath;
+    };
+    img.error = function () {
+      img.src = $(el).data("src");;
     };
 
     let tag_a = document.createElement("a");
