@@ -3,7 +3,6 @@ import del from "del";
 import webpcss from "gulp-webpcss";
 import autoprefixer from "gulp-autoprefixer";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
-import criticalCss from "gulp-critical-css";
 
 export const css = () => {
   return app.gulp
@@ -40,8 +39,8 @@ export const css = () => {
       )
     )
     .pipe(app.gulp.dest(app.path.build.css))
-    .pipe(criticalCss(["wrapper"]))
     .pipe(app.plugins.if(app.isBuild, cleanCss()))
     .pipe(app.plugins.rename({ suffix: ".min" }))
-    .pipe(app.gulp.dest(app.path.build.css));
+    .pipe(app.gulp.dest(app.path.build.css))
+  
 };

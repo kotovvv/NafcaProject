@@ -28,6 +28,7 @@ import { zip } from "./config/gulp-tasks/zip.js";
 import { sprite } from "./config/gulp-tasks/sprite.js";
 import { gitignore } from "./config/gulp-tasks/gitignore.js";
 import { pushgit } from "./config/gulp-tasks/pushgit.js";
+import { critic } from "./config/gulp-tasks/critical.js";
 
 import { otfToTtf, ttfToWoff, fonstStyle } from "./config/gulp-tasks/fonts.js";
 
@@ -56,6 +57,8 @@ export { ftp };
 export { zip };
 export { reset };
 export { pushgit };
+export { critic };
+// const critic = gulp.series(critic)
 
 // Построение сценариев выполнения задач
 const development = gulp.series(devTasks);

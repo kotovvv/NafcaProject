@@ -17,10 +17,12 @@
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
-		"bem": "fls-bemtree-from-html"
+		"bem": "fls-bemtree-from-html",
+		"crit": "gulp critic"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "latest",
+		"critical": "^4.0.1",
 		"css-loader": "latest",
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
@@ -28,7 +30,6 @@
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
-		"gulp-critical-css": "^1.0.1",
 		"gulp-fonter-fix": "latest",
 		"gulp-gh-pages": "^0.5.4",
 		"gulp-group-css-media-queries": "latest",
