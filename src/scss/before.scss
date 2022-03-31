@@ -24,6 +24,16 @@ section {
   section {
     padding: 0 calc(50% - 590px);
   }
+
+}
+@media (min-width: 2000px) {
+  .wrapper{
+    max-width: calc(80% / 1.3);
+    margin: auto;
+    // zoom: 1.3;
+    transform: scale(1.3);
+transform-origin: center top;
+  }
 }
 
 // @media (min-width: 1439.98px) {
@@ -1258,7 +1268,7 @@ header .header-menu a {
   display: flex;
   justify-content: space-between;
   margin-top: 9.063rem;
-  margin-bottom: 25rem;
+  margin-bottom: 6rem;
   grid-gap: 1rem;
 }
 .main__Interface-title {
@@ -1737,4 +1747,7 @@ img.swiper-slide {
     line-height: 28px;
     color: #676767;
   }
+}
+.main__CrossFitResponsive{
+padding-top: 100px;
 }
