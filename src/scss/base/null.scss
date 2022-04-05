@@ -27,11 +27,7 @@ body {
 	font-family: $fontFamily;
 	font-size: $fontSize;
 	//text-rendering: optimizeLegibility;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+
 }
 input,
 button,
@@ -68,4 +64,7 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
+	padding-bottom: 2rem;
 }
+
+p{padding-bottom: 2rem;}

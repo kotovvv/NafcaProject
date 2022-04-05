@@ -479,6 +479,7 @@ header .header-menu a {
   // line-height: 1.2;
   font-weight: 800;
   margin: 0;
+  
 }
 .main__Secret p {
   font-size: 2.25rem;
@@ -486,7 +487,8 @@ header .header-menu a {
   // line-height: 1.2;
 
   margin: 0;
-  margin-top: 25px;
+  
+  // margin-top: 25px;
 }
 .main__Secret-list {
   display: flex;
@@ -520,9 +522,7 @@ header .header-menu a {
   color: rgb(41, 41, 41);
   font-weight: 700;
   // line-height: 1.2;
-
   margin: 0;
-  margin-bottom: 40px;
 }
 .main__Intro-text p {
   font-size: 1.5rem;
@@ -811,7 +811,7 @@ header .header-menu a {
   border-color: rgb(51, 153, 255);
   border-style: solid;
   width: 155px;
-  height: 35px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -863,6 +863,7 @@ header .header-menu a {
   text-decoration: none;
   transition: 0.3s all;
   width: 155px;
+  height: 42px;
 }
 .footer__home-link:hover {
   border-width: 3px;
