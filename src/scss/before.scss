@@ -900,11 +900,12 @@ header .header-menu a {
 .main__GoogleIntro {
   display: grid;
   grid-template-columns: 6fr 1.2fr;
-  grid-template-rows: 100px 150px repeat(2, 1.2fr);
+  grid-template-rows: auto;
   grid-gap: 60px;
   margin-bottom: 7.813rem;
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-items: center;
     text-align: center;
     grid-gap: 20px;
@@ -1366,7 +1367,7 @@ header .header-menu a {
     padding: 0 45px;
   }
   .main__Secret-list {
-    margin: 85px 0;
+    // margin: 85px 0;
   }
   .main__CrossFitIntro {
     grid-template-columns: 1fr;
@@ -1464,7 +1465,7 @@ header .header-menu a {
     margin-bottom: 60px;
   }
   .main__Secret-list {
-    margin: 40px 0;
+    // margin: 40px 0;
   }
   .main__Secret-list {
     grid-gap: 20px;
