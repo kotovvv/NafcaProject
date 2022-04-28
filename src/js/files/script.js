@@ -111,7 +111,11 @@ jQuery(document).ready(function () {
     };
     img.error = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
       img.src = jQuery(el).data("src");
+=======
+      img.src = jQuery(el).data("src");;
+>>>>>>> b20efa883fcd3037c220adc1af366589e478b5f1
 =======
       img.src = jQuery(el).data("src");;
 >>>>>>> b20efa883fcd3037c220adc1af366589e478b5f1
