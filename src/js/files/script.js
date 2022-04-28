@@ -6,7 +6,7 @@ import { flsModules } from "./modules.js";
 // load svg sprite on page
 (function (window, document) {
   "use strict";
-  var file = "../img/svg.html",
+  var file = svgfile,
     revision = 1;
   if (
     !document.createElementNS ||
@@ -110,7 +110,11 @@ jQuery(document).ready(function () {
       el.dataset.src = filepath;
     };
     img.error = function () {
+<<<<<<< HEAD
       img.src = jQuery(el).data("src");
+=======
+      img.src = jQuery(el).data("src");;
+>>>>>>> b20efa883fcd3037c220adc1af366589e478b5f1
     };
 
     let tag_a = document.createElement("a");

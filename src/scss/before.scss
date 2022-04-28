@@ -49,7 +49,7 @@ transform-origin: center top;
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
 }
 .fullWidth {
@@ -100,7 +100,7 @@ transform-origin: center top;
   font-size: rem(30);
   color: rgb(103, 103, 103);
   font-weight: 900;
-  line-height: 1.345;
+  // line-height: 1.345;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -194,7 +194,7 @@ header .header-menu a {
   font-size: 1.975rem;
   color: rgb(103, 103, 103);
   font-weight: 700;
-  line-height: 1.345;
+  // line-height: 1.345;
   text-decoration: none;
   transition: 0.3s all;
   padding: 5px 12px;
@@ -271,7 +271,7 @@ header .header-menu a {
   margin-top: 0;
   font-size: 1.5rem;
   color: rgb(103, 103, 103);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   @media (max-width: $mobile) {
     text-align: center;
@@ -318,7 +318,7 @@ header .header-menu a {
 .main__home_companies-title {
   font-size: 1.125rem;
   color: rgb(51, 153, 255);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -339,7 +339,7 @@ header .header-menu a {
       font-size: 1.875rem;
       color: rgb(103, 103, 103);
       font-weight: 700;
-      line-height: 1.2;
+      // line-height: 1.2;
       text-decoration: none;
       padding: 0 16px;
       border-radius: 40px;
@@ -372,7 +372,7 @@ header .header-menu a {
 .main__home_companies-link {
   font-size: 1.125rem;
   color: rgb(132, 132, 132);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-top: 1.8em;
 }
@@ -383,7 +383,7 @@ header .header-menu a {
 .main__home_startups-title {
   font-size: 1.125rem;
   color: rgb(255, 51, 102);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -404,7 +404,7 @@ header .header-menu a {
       font-size: 1.875rem;
       color: rgb(103, 103, 103);
       font-weight: 700;
-      line-height: 1.2;
+      // line-height: 1.2;
       text-decoration: none;
       padding: 0 23px;
       border-radius: 40px;
@@ -438,7 +438,7 @@ header .header-menu a {
 .main__home_startups-link {
   font-size: 1.125rem;
   color: rgb(132, 132, 132);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-top: 1.8em;
 }
@@ -452,7 +452,7 @@ header .header-menu a {
   font-size: 1.875rem;
   color: rgb(103, 103, 103);
   font-weight: 700;
-  line-height: 1.345;
+  // line-height: 1.345;
 }
 .main__home_view.show p {
   visibility: hidden;
@@ -463,8 +463,12 @@ header .header-menu a {
   visibility: hidden;
   opacity: 0;
   transition: 0.5s all;
+<<<<<<< HEAD
   // top: -30px;
 }
+=======
+ }
+>>>>>>> b20efa883fcd3037c220adc1af366589e478b5f1
 .main__home_view.show img {
   opacity: 1;
   visibility: visible;
@@ -483,17 +487,26 @@ header .header-menu a {
 .main__Secret h3 {
   font-size: 3.75rem;
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   font-weight: 800;
   margin: 0;
+  
 }
 .main__Secret p {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
+<<<<<<< HEAD
   margin: 0;
   margin-top: 25px;
   line-height: 1.2;
       font-weight: 500;
+=======
+  // line-height: 1.2;
+
+  margin: 0;
+  
+  // margin-top: 25px;
+>>>>>>> b20efa883fcd3037c220adc1af366589e478b5f1
 }
 .main__Secret-list {
   display: flex;
@@ -506,7 +519,7 @@ header .header-menu a {
   list-style: none;
   font-size: 1.5rem;
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
 }
 .main__Secret-list li b {
   display: block;
@@ -528,10 +541,8 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
-
+  // line-height: 1.2;
   margin: 0;
-  margin-bottom: 40px;
 }
 .main__Intro-text p {
   font-size: 1.5rem;
@@ -581,14 +592,14 @@ header .header-menu a {
   font-size: 1.125rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   margin: 0;
 }
 .main__CrossFitIntro_time-block .time-year {
   font-size: 1.125rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   margin: 0;
 }
 .main__CrossFitIntro_time-block.CrossFit {
@@ -600,7 +611,7 @@ header .header-menu a {
 .main__CrossFitSetting {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-bottom: 2.25rem;
 }
@@ -617,14 +628,14 @@ header .header-menu a {
   font-size: 4.5rem;
   font-family: "Impact";
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   margin-bottom: 10px;
 }
 .main__CrossFitPalette__title-p {
   font-size: 1.125rem;
   font-family: "HelveticaNeue";
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   letter-spacing: 0.2rem;
   margin-bottom: 15px;
 }
@@ -632,7 +643,7 @@ header .header-menu a {
   font-size: 1.125rem;
   font-family: "HelveticaNeue";
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   margin-bottom: 30px;
   letter-spacing: 0.2rem;
 }
@@ -666,7 +677,7 @@ header .header-menu a {
   font-family: "HelveticaNeue";
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   padding: 15px 15px 20px;
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -706,7 +717,7 @@ header .header-menu a {
 .main__CrossFitExamples-text p {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
 }
 .main__CrossFitResponsive-title {
   margin-bottom: 50px;
@@ -714,7 +725,7 @@ header .header-menu a {
 .main__CrossFitResponsive-content {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   margin-bottom: 100px;
 }
 .main__CrossFitResponsive_list {
@@ -731,7 +742,7 @@ header .header-menu a {
   font-size: 1.125rem;
   color: rgb(50, 50, 50);
   font-weight: 700;
-  line-height: 2;
+  // line-height: 2;
 }
 .main__CrossFitResponsive_list_block:nth-child(2)
   .main__CrossFitResponsive_list-title {
@@ -765,7 +776,7 @@ header .header-menu a {
 .main__CrossFitReference_content p {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   max-width: 470px;
   margin-left: 50px;
 }
@@ -790,7 +801,7 @@ header .header-menu a {
 .main__CrossFitRenaissance p {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   text-align: center;
   max-width: 680px;
   display: block;
@@ -808,7 +819,7 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(51, 153, 255);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -816,13 +827,13 @@ header .header-menu a {
   font-size: 1.313rem;
   color: rgb(51, 153, 255);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: center;
   border-width: 3px;
   border-color: rgb(51, 153, 255);
   border-style: solid;
   width: 155px;
-  height: 35px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -846,7 +857,7 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(255, 255, 255);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-decoration: none;
   text-align: center;
   display: flex;
@@ -869,11 +880,12 @@ header .header-menu a {
 .footer__home-link {
   font-size: 1.875rem;
   color: rgb(255, 255, 255);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: center;
   text-decoration: none;
   transition: 0.3s all;
   width: 155px;
+  height: 42px;
 }
 .footer__home-link:hover {
   border-width: 3px;
@@ -894,7 +906,7 @@ header .header-menu a {
 .main__GoogleSecret h3 {
   font-size: 3.75rem;
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   font-weight: 700;
   text-align: left;
   margin: 0;
@@ -902,7 +914,7 @@ header .header-menu a {
 .main__GoogleSecret p {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin: 0;
   margin-top: 50px;
@@ -910,14 +922,16 @@ header .header-menu a {
 .main__GoogleIntro {
   display: grid;
   grid-template-columns: 6fr 1.2fr;
-  grid-template-rows: 100px 150px repeat(2, 1.2fr);
-  margin-bottom: 7.813rem;
+  grid-template-rows: auto;
   grid-gap: 60px;
   margin-bottom: 7.813rem;
   @media (max-width: $mobile) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-items: center;
     text-align: center;
+    grid-gap: 20px;
+    margin-bottom: 3rem;
   }
   h3 {
     @media (max-width: $mobile) {
@@ -1003,7 +1017,7 @@ header .header-menu a {
 .main__GoogleTime-title {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   margin-bottom: 20px;
 }
 .main__GoogleTime_clocks {
@@ -1016,7 +1030,7 @@ header .header-menu a {
 .main__GoogleTime_clocks-title {
   font-size: 1.125rem;
   color: rgb(50, 50, 50);
-  line-height: 1.2;
+  // line-height: 1.2;
   position: absolute;
 }
 .main__GoogleTime_clocks-title.Top {
@@ -1044,7 +1058,7 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: left;
   margin-bottom: 25px;
   @media (max-width: $mobile) {
@@ -1054,7 +1068,7 @@ header .header-menu a {
 .main__GoogleWatch-text {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   margin: 0;
 }
 .main__GoogleWatchExpample {
@@ -1062,6 +1076,9 @@ header .header-menu a {
 }
 .main__GoogleWatchExpample_block {
   margin-bottom: 5rem;
+  @media (max-width: $mobile){
+    margin-bottom: 2rem;
+  }
   img {
     width: 100%;
   }
@@ -1088,14 +1105,14 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   text-align: center;
   margin-bottom: 35px;
 }
 .main__GoogleWinner-text {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   text-align: center;
   max-width: 740px;
   margin: 0 auto;
@@ -1154,7 +1171,7 @@ header .header-menu a {
 .main__DinersIntro-Gift p {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
-  line-height: 1.2;
+  // line-height: 1.2;
   margin-bottom: 1rem;
 }
 .main__DinersIntro-Gift img {
@@ -1171,7 +1188,7 @@ header .header-menu a {
   font-size: 1.5rem;
   text-align: center;
   color: rgb(0, 0, 0);
-  line-height: 1.2;
+  // line-height: 1.2;
   margin-bottom: 1.2rem;
 }
 .main__DinersDescAMob {
@@ -1183,13 +1200,13 @@ header .header-menu a {
   font-size: 2.25rem;
   color: rgb(41, 41, 41);
   font-weight: 700;
-  line-height: 1.2;
+  // line-height: 1.2;
   margin-bottom: 2rem;
 }
 .main__DinersDescAMob-text {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   text-align: center;
   margin-bottom: 5rem;
   padding: 0 10rem;
@@ -1219,7 +1236,7 @@ header .header-menu a {
 .main__IscarPlan-text {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   text-align: center;
   max-width: 800px;
   margin: 1.2rem auto;
@@ -1268,14 +1285,14 @@ header .header-menu a {
 .main__IscarFrame-title {
   font-size: 1.5rem;
   color: rgb(129, 129, 129);
-  line-height: 1.5;
+  // line-height: 1.5;
   text-align: center;
   margin-bottom: 3rem;
 }
 .main__IscarFrame-text {
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
-  line-height: 1.5;
+  // line-height: 1.5;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -1293,7 +1310,7 @@ header .header-menu a {
 .main__Desctop-title {
   font-size: 1.5rem;
   color: rgb(129, 129, 129);
-  line-height: 1.5;
+  // line-height: 1.5;
   display: block;
   margin: 2rem auto;
   text-align: center;
@@ -1313,7 +1330,7 @@ header .header-menu a {
   max-width: 516px;
   font-size: 1.5rem;
   color: rgb(41, 41, 41);
-  line-height: 1;
+  // line-height: 1;
   text-align: left;
   margin-bottom: 2.5rem;
 }
@@ -1400,7 +1417,7 @@ header .header-menu a {
     padding: 0 45px;
   }
   .main__Secret-list {
-    margin: 85px 0;
+    // margin: 85px 0;
   }
   .main__CrossFitIntro {
     grid-template-columns: 1fr;
@@ -1498,7 +1515,7 @@ header .header-menu a {
     margin-bottom: 60px;
   }
   .main__Secret-list {
-    margin: 40px 0;
+    // margin: 40px 0;
   }
   .main__Secret-list {
     grid-gap: 20px;
@@ -1530,7 +1547,7 @@ header .header-menu a {
   }
   .main__CrossFitPalette__colors-description {
     font-size: 0.675rem;
-    line-height: 1.1;
+    // line-height: 1.1;
     height: 20px;
   }
   .main__CrossFitExamples-text p,
@@ -1760,7 +1777,7 @@ img.swiper-slide {
   &__title {
     font-weight: 600;
     font-size: 22px;
-    line-height: 32px;
+    // line-height: 32px;
     margin-top: 2.4em;
     color: #3399ff;
     margin-bottom: 2.4em;
@@ -1782,7 +1799,7 @@ img.swiper-slide {
   a {
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
+    // line-height: 28px;
     color: #676767;
   }
 }
