@@ -52,6 +52,19 @@ import { flsModules } from "./modules.js";
 })(window, document);
 
 window.onload = function () {
+  /*loadSvg*/
+  jQuery("[data-svg]").each(function () {
+    var $this = jQuery(this);
+    var $svg = $this.data("svg");
+    var $filename = $svg.split("\\").pop().split("/").pop().replace(".svg", "");
+
+    $this.load($svg, function (responseTxt, statusTxt) {
+      if (statusTxt == "success") {
+        $this.find("svg").addClass("svg svg-" + $filename + "");
+      }
+    });
+  });
+
   let div = document.getElementsByClassName("main__home_view")[0];
   if (!div) return;
   let img = document.createElement("img");
@@ -73,9 +86,9 @@ window.onload = function () {
     });
 };
 
-$(document).ready(function () {
+jQuery(document).ready(function () {
   // onload images
-  let iswebp = $("html").hasClass("webp");
+  let iswebp = jQuery("html").hasClass("webp");
   let cont = document.createElement("div");
   cont.id = "swiper";
   cont.className = "swiper-container";
@@ -83,8 +96,8 @@ $(document).ready(function () {
   wrap.className = "swiper-wrapper";
   let pagin = document.createElement("div");
   pagin.className = "swiper-pagination";
-  $("[data-src]").each(function (ix, el) {
-    let filepath = $(el).data("src");
+  jQuery("[data-src]").each(function (ix, el) {
+    let filepath = jQuery(el).data("src");
     let img = document.createElement("img");
     img.className = "swiper-slide";
     if (iswebp) {
@@ -97,11 +110,11 @@ $(document).ready(function () {
       el.dataset.src = filepath;
     };
     img.error = function () {
-      img.src = $(el).data("src");;
+      img.src = jQuery(el).data("src");
     };
 
     let tag_a = document.createElement("a");
-    tag_a.href = $(el).attr("href");
+    tag_a.href = jQuery(el).attr("href");
 
     tag_a.appendChild(img);
     wrap.appendChild(tag_a);
@@ -114,7 +127,7 @@ $(document).ready(function () {
     document.getElementsByClassName("main__home_view").length
   ) {
     document.getElementsByClassName("main__home_view")[0].replaceWith(cont);
-    $("#swiper .swiper-wrapper").slick({
+    jQuery("#swiper .swiper-wrapper").slick({
       // infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -123,7 +136,7 @@ $(document).ready(function () {
       dots: true,
     });
   }
-  $(".hamburger-lines").click(function () {
-    $("body").toggleClass("show");
+  jQuery(".hamburger-lines").click(function () {
+    jQuery("body").toggleClass("show");
   });
 });
