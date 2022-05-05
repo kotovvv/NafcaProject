@@ -65,6 +65,10 @@ window.onload = function () {
     });
   });
 
+
+};
+
+jQuery(document).ready(function () {
   let div = document.getElementsByClassName("main__home_view")[0];
   if (!div) return;
   let img = document.createElement("img");
@@ -84,9 +88,7 @@ window.onload = function () {
         });
       }
     });
-};
 
-jQuery(document).ready(function () {
   // onload images
   let iswebp = jQuery("html").hasClass("webp");
   let cont = document.createElement("div");
