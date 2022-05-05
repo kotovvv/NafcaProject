@@ -1263,7 +1263,7 @@ header .header-menu a {
 }
 .main__IscarFrame-img svg {
   width: 100%;
-  height: 73%;
+  height: 100%;
   @media (max-width:$mobile){
      display: none; 
   }
@@ -1314,6 +1314,8 @@ background:#434343;
 .main__Desctop-img img {
   width: 80%;
   position: relative;
+  display:block;
+  margin: auto;
 
 }
 .main__Desctop-title {
@@ -1516,18 +1518,20 @@ background:#434343;
   }
   .main__Secret h3 {
     font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
   }
   .main__Secret p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
   }
   .main__CrossFit {
     margin-bottom: 60px;
   }
   .main__Secret-list {
-    // margin: 40px 0;
-  }
-  .main__Secret-list {
     grid-gap: 20px;
+    margin: 7px 0 56px;
+    text-align: center;
   }
   .main__Secret-list li {
     font-size: 1rem;
