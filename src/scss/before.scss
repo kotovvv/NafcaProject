@@ -1263,7 +1263,7 @@ header .header-menu a {
 }
 .main__IscarFrame-img svg {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   @media (max-width:$mobile){
      display: none; 
   }
@@ -1532,6 +1532,7 @@ background:#434343;
     grid-gap: 20px;
     margin: 7px 0 56px;
     text-align: center;
+    justify-content: center;
   }
   .main__Secret-list li {
     font-size: 1rem;
@@ -1542,6 +1543,7 @@ background:#434343;
     font-size: 1.25rem;
     margin-bottom: 20px;
     line-height: 1;
+    text-align: center;
   }
   .main__Intro-text p,
   .main__DinersDescAMob-text {
@@ -1710,6 +1712,11 @@ background:#434343;
   .main__LupaExp-img img {
     width: 100%;
     max-width: 48%;
+  }
+}
+@media (max-width: 768px) {
+  .main__CrossFitPalette__title{
+    display:none
   }
 }
 @media (max-width: 450px) {
