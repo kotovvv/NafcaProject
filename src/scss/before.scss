@@ -273,6 +273,7 @@ header .header-menu a {
   color: rgb(103, 103, 103);
   // line-height: 1.2;
   text-align: left;
+      padding: 0 1rem;
   @media (max-width: $mobile) {
     text-align: center;
     margin-top: 30px;
@@ -557,51 +558,60 @@ header .header-menu a {
 }
 .main__CrossFitIntro_time {
   width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
   max-width: 660px;
 }
-.main__CrossFitIntro_time::after {
-  content: "";
-  height: 1px;
-  width: 76%;
-  position: absolute;
-  top: 48%;
-  left: 9%;
-  background: rgb(23, 169, 123);
-}
-.main__CrossFitIntro_time-block {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 136px;
-  align-items: center;
-}
-.main__CrossFitIntro_time-block svg {
+.line_wrp {
+  display: grid;
+  max-width: 660px;
+  grid-template-columns: max-content 4fr 18fr;
+  font-size: 1.125rem;
+  color: #292929;
+  font-weight: 700;
   position: relative;
-  z-index: 2;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 126px);
+    background: #292929;
+    top: 50%;
+    left: 37px;
+  }
+
+  &_blk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &.end {
+      justify-self: end;
+    }
+.text{
+  padding: 20px 0;
 }
-.main__CrossFitIntro_time-block .time-title {
-  font-size: 1.125rem;
-  color: rgb(41, 41, 41);
-  font-weight: 700;
-  // line-height: 1.2;
-  margin: 0;
-}
-.main__CrossFitIntro_time-block .time-year {
-  font-size: 1.125rem;
-  color: rgb(41, 41, 41);
-  font-weight: 700;
-  // line-height: 1.2;
-  margin: 0;
-}
-.main__CrossFitIntro_time-block.CrossFit {
-  margin-left: 20%;
-}
-.main__CrossFitIntro_time-block.Health {
-  margin-left: auto;
+    .sircle {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+box-sizing: content-box;
+      &.one {
+        background: #292929;
+        border: 5px solid #17a97b;
+      }
+
+      &.two {
+        background: #292929;
+        border: 6px solid #fff;
+      }
+      &.three {
+        background: #fff;
+        border: 6px solid #17a97b;
+      }
+    }
+  }
 }
 .main__CrossFitSetting {
   font-size: 2.25rem;
@@ -894,7 +904,8 @@ max-height: 414px;
   text-decoration: none;
   transition: 0.3s all;
   width: 155px;
-  height: 42px;
+line-height: 48px;
+  height: 48px;
 }
 .footer__home-link:hover {
   border-width: 3px;
