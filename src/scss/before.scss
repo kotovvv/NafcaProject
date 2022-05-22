@@ -293,11 +293,12 @@ header .header-menu a {
 }
 .main__home_list {
   display: grid;
-  grid-template-columns: 478px 2fr;
+  grid-template-columns: 478px 1fr;
   margin-top: 3rem;
   padding-left: 3rem;
+  padding-right: 1rem;
   margin-bottom: 5rem;
-      grid-gap: 1rem;
+      grid-gap: 4rem;
   @media (max-width: $pc) {
     margin-top: 0;
   }
@@ -720,6 +721,7 @@ box-sizing: content-box;
 }
 .main__CrossFitExamples-text {
   max-width: 540px;
+  margin-top: 2rem;
 }
 .main__CrossFitExamples-text p {
   font-size: 1.5rem;
@@ -1229,7 +1231,8 @@ line-height: 48px;
   color: rgb(50, 50, 50);
   // line-height: 1.5;
   text-align: center;
-  margin-bottom: 5rem;
+max-width: 800px;
+  margin: 0 auto 5rem;
   padding: 0 10rem;
   @media (min-width:$mobile){
       padding: 0;
