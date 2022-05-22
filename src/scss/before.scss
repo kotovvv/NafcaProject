@@ -299,11 +299,16 @@ header .header-menu a {
   padding-right: 1rem;
   margin-bottom: 5rem;
       grid-gap: 4rem;
+
   @media (max-width: $pc) {
     margin-top: 0;
   }
   @media (max-width: $mobile) {
     grid-template-columns: 100%;
+  }
+  @media (min-width:$pc) {
+    padding-right: 3rem;
+    grid-gap: 11rem;
   }
 }
 
